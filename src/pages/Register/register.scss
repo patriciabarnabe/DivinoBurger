@@ -1,0 +1,27 @@
+
+
+.radio-wrapper {
+  
+  p {
+    align-self: start;
+  }
+}
+
+.margin-input {
+  margin-bottom: 1.7rem;
+}
+
+.goback-btn {
+  background: none;
+  border: none;
+  position:absolute;
+  top:3rem;
+  left:3rem;
+  z-index: 1;
+
+}
+
+.error-text {
+  color: red;
+  margin-bottom: -1.5rem;
+}

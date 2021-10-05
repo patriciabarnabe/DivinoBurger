@@ -1,0 +1,173 @@
+:root {
+	--white: #fff;
+	--black: #000000;
+	--green: #a0a603;
+	--yellow: #d97904;
+	--red: #bf0404;
+	--dark-red: #590202;
+	--light-gray: #292929;
+	--dark-gray: #111111;
+	--stroke: #464242;
+}
+
+.cards-orders-container {
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: row;
+	justify-content: center;
+	padding: 30px;
+	margin-bottom: 40px;
+	align-items: baseline;
+	// border-top: 1px solid var(--stroke);
+	font-weight: bold;
+	color: var(--black);
+	
+
+	span {
+		font-weight: lighter;
+	}
+
+	p {
+		align-self: center;
+		margin: 1rem 0;
+		
+	}
+}
+
+.card-order-template {
+	margin: 1rem;
+	width: 350px;
+	height: 530px;
+	background-image: url('../../img/bloco.png');
+	background-position: center;
+	background-size:cover;
+	padding: 3rem 2rem;
+	:last-child{
+		border-bottom: none;
+	}
+
+
+
+}
+
+.card-order-info {
+	height: 445px;
+	padding: 20px;
+	line-height: 12px;
+	overflow-y: auto;
+
+	/* width */
+	&::-webkit-scrollbar {
+	width: 5px;
+
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+	background:var(--yellow); 
+	border-radius: 10px;
+	}
+
+}
+
+.card-order-table {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	font-size: 1.3em;
+	background-color: #d979046b;
+	padding: 0 1rem;
+	border-radius: 5px;
+}
+
+.btn-status{
+	letter-spacing: 0.01rem;
+	margin-top:1rem;
+	width:100%;
+
+}
+
+.btn-delivered{
+	display:none;
+	
+}
+
+.order-data{
+	margin-top:1.5rem;
+	margin-bottom: 1rem;
+}
+
+.products-title{
+	width:100%;
+	background-color:rgb(165, 158, 158);
+	padding: 0.5rem 0;
+	text-align: center;
+	color:white;
+	font-size:0.9rem;
+	margin-bottom:0 !important;
+	border-radius: 5px;
+
+}
+
+.order-products {
+	border-bottom: 1px solid rgb(165, 158, 158);
+	
+}
+
+.order-status {
+	padding: 0.5rem 0.7rem;
+	border-radius:15px;
+	margin-left:5px;
+	font-size:1.1rem;
+	height: 1.7rem;
+}
+
+.status-pending {
+	background-color: rgb(245, 67, 67);
+}
+
+.status-loading {
+	background-color: rgb(240, 240, 70);
+}
+
+
+.status-done {
+	background-color: rgb(67, 202, 67);
+	
+}
+
+.status-delivered {
+	background-color: rgb(177, 61, 212);
+	
+}
+
+.btn-list-orders{
+	background-color: var(--light-gray);
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+	margin-right:1rem;
+	margin-top:1rem;
+
+	&:focus{
+		background-color:var(--red);
+	}
+
+}
+
+.btn-visible{
+	display:inline-block;
+	@media (min-device-width: 1400px) {
+    font-size:1.1rem;
+  }
+}
+
+.btn-invisible{
+	display:none
+}
+
