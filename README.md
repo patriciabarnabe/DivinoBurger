@@ -1,4 +1,4 @@
-<h1 align="center">Divino Burger :hamburger:</p>
+<h1 align="center">Divino Burger :hamburger:</h1>
 
 ## Projeto 4 - Burger Queen desenvolvido no bootcamp de Front-End da SAP006 Laboratória :yellow_heart:
 
